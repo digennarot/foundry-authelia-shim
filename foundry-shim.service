@@ -1,0 +1,16 @@
+[Unit]
+Description=Foundry VTT Authelia SSO Shim
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/foundry-shim
+EnvironmentFile=/etc/foundry-shim.env
+ExecStart=/usr/bin/node server.mjs
+Restart=on-failure
+RestartSec=5s
+DynamicUser=yes
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

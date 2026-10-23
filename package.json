@@ -1,0 +1,34 @@
+{
+  "name": "foundry-authelia-shim",
+  "version": "1.0.0",
+  "description": "Forward-auth & auto-login reverse proxy shim between Caddy/Authelia and Foundry VTT v14",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "keywords": [
+    "foundryvtt",
+    "foundry-vtt",
+    "authelia",
+    "caddy",
+    "sso",
+    "forward-auth",
+    "reverse-proxy",
+    "authentication",
+    "ldap"
+  ],
+  "author": "Tiziano Di Gennaro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digennarot/foundry-authelia-shim.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "http-proxy": "^1.18.1",
+    "socket.io-client": "^4.8.0"
+  }
+}
